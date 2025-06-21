@@ -32,8 +32,13 @@
           text-align: center;
        }
          p {
+         text-align: justify;
          font-size: 13px;
-          text-align: center;
+          line-height: 1.6;
+          width: 50%;
+          max-width: 600px;
+          margin: 10px auto;
+          color: rgb(11, 5, 5); /* cor preta no texto */
         }
 
 
@@ -58,6 +63,21 @@
             color: rgb(0, 4, 255);
             transform: scale(1.1);
         }
+        .bloco {
+      width: 90%; /* Ajuste a largura como preferir */
+      max-width: 800px;
+      margin:5px auto 20px auto; /* centraliza horizontalmente */
+      text-align: justify; /* justifica o texto */
+      font-size: 16px;
+      line-height: 1.6;
+      padding: 10px;
+    }
+    .centro {
+     display: flex;
+      justify-content: center;
+      margin-bottom: 5px; /* mais próximo do <p> */      
+}
+
        
     </style>
 </head>
@@ -70,20 +90,33 @@
    <h2>BIOGRAFIA</h2>
     </div>
     <div class="header-right">  
-           <a href="#" data-target="contato">Contato</a>  
+           <a href="contato.html" data-target="contato">Contato</a>  
         </div>  
    </header> 
-   <br><br><br><br><br>
+   
    
    <div class="text-center">
    <h2>MADALENA NDOMBAXI</h2>
    <h6>ENGENHEIRA</h6>
-   <img src="81.jpg">
-   <p> 
-    Madalena António Ndombaxi nascida aos 23 de Fevereiro de 2003 em Luanda,
-    distrito urbano do Palanca na rua 10,fiz o ensino primario na Escola Catolica e o
-    ensino médio no Istituto Politecnico Pukunina
-   </p>
+ 
    </div>
+   <div class="centro">
+    <img src="81.jpg">
+   </div>
+<div class="bloco">
+    <p>
+     Chamo-me Madalena António Ndombaxi, nasci em 23 de fevereiro de 2003, em Luanda.
+      Fiz o ensino primário na Escola Católica e o médio no Instituto Politécnico Pukunina,
+      onde me formei em Informática com média de 14 valores. Durante essa formação,
+     realizei um estágio no CINFOTEC Rangel, onde tive a oportunidade de aplicar na prática os
+      conhecimentos adquiridos e aprofundar minha experiência na área tecnológica. 
+      Atualmente, sou estudante de Engenharia Informática na Universidade Privada de Angola.
+       Tenho grande interesse por tecnologia e pretendo, no futuro, atuar no setor de inovação digital em Angola.
+
+
+    </p>
+
+</div>
+
 </body>
 </html>
