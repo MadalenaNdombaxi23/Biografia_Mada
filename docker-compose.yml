@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  nginx:
+    image: nginx
+    ports:
+      - "3000:80"
+    volumes:
+      - ./BiografiaMada:/usr/share/nginx/html
+    networks:
+      - rede_aplicativos
+
+networks:
+  rede_aplicativos:
